@@ -1,0 +1,45 @@
+$speed: 2000;
+$lengths: 326, 234, 106, 205, 234, 339, 182, 182, 341, 341, 234, 316, 81, 29, 81,
+  29;
+$totalLength: 0;
+$delay: 100;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+svg {
+  width: 80vw;
+  height: auto;
+}
+
+path {
+  animation-name: write;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@for $i from 1 through 16 {
+  #Path_#{$i} {
+    stroke-dasharray: nth($lengths, $i);
+    stroke-dashoffset: nth($lengths, $i);
+    animation-duration: nth($lengths, $i) / $speed * 1s;
+    animation-delay: $totalLength / $speed * 1s;
+  }
+
+  $totalLength: $totalLength + nth($lengths, $i) + $delay;
+}
+
+@keyframes write {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

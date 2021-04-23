@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  height: 100vh; }
+
+svg {
+  width: 80vw;
+  height: auto; }
+
+path {
+  animation-name: write;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+
+#Path_1 {
+  stroke-dasharray: 326;
+  stroke-dashoffset: 326;
+  animation-duration: 0.163s;
+  animation-delay: 0s; }
+
+#Path_2 {
+  stroke-dasharray: 234;
+  stroke-dashoffset: 234;
+  animation-duration: 0.117s;
+  animation-delay: 0.213s; }
+
+#Path_3 {
+  stroke-dasharray: 106;
+  stroke-dashoffset: 106;
+  animation-duration: 0.053s;
+  animation-delay: 0.38s; }
+
+#Path_4 {
+  stroke-dasharray: 205;
+  stroke-dashoffset: 205;
+  animation-duration: 0.1025s;
+  animation-delay: 0.483s; }
+
+#Path_5 {
+  stroke-dasharray: 234;
+  stroke-dashoffset: 234;
+  animation-duration: 0.117s;
+  animation-delay: 0.6355s; }
+
+#Path_6 {
+  stroke-dasharray: 339;
+  stroke-dashoffset: 339;
+  animation-duration: 0.1695s;
+  animation-delay: 0.8025s; }
+
+#Path_7 {
+  stroke-dasharray: 182;
+  stroke-dashoffset: 182;
+  animation-duration: 0.091s;
+  animation-delay: 1.022s; }
+
+#Path_8 {
+  stroke-dasharray: 182;
+  stroke-dashoffset: 182;
+  animation-duration: 0.091s;
+  animation-delay: 1.163s; }
+
+#Path_9 {
+  stroke-dasharray: 341;
+  stroke-dashoffset: 341;
+  animation-duration: 0.1705s;
+  animation-delay: 1.304s; }
+
+#Path_10 {
+  stroke-dasharray: 341;
+  stroke-dashoffset: 341;
+  animation-duration: 0.1705s;
+  animation-delay: 1.5245s; }
+
+#Path_11 {
+  stroke-dasharray: 234;
+  stroke-dashoffset: 234;
+  animation-duration: 0.117s;
+  animation-delay: 1.745s; }
+
+#Path_12 {
+  stroke-dasharray: 316;
+  stroke-dashoffset: 316;
+  animation-duration: 0.158s;
+  animation-delay: 1.912s; }
+
+#Path_13 {
+  stroke-dasharray: 81;
+  stroke-dashoffset: 81;
+  animation-duration: 0.0405s;
+  animation-delay: 2.12s; }
+
+#Path_14 {
+  stroke-dasharray: 29;
+  stroke-dashoffset: 29;
+  animation-duration: 0.0145s;
+  animation-delay: 2.2105s; }
+
+#Path_15 {
+  stroke-dasharray: 81;
+  stroke-dashoffset: 81;
+  animation-duration: 0.0405s;
+  animation-delay: 2.275s; }
+
+#Path_16 {
+  stroke-dasharray: 29;
+  stroke-dashoffset: 29;
+  animation-duration: 0.0145s;
+  animation-delay: 2.3655s; }
+
+@keyframes write {
+  to {
+    stroke-dashoffset: 0; } }
